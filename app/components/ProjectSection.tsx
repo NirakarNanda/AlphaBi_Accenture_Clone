@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
 import React, { useState, useRef } from "react";
-//import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 
 interface Project {
@@ -15,7 +15,60 @@ interface Project {
 }
 
 const projectsData: Project[] = [
-  // Your project data...
+    {
+        id: 1,
+        title: "Accenture Life Trends 2024",
+        description: "The visible and invisible mediators between people and their world are changing.Harmony between tech and business showing tensions,and society is flux.",
+        image: "/images/projects/1.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://www.accenture.com/us-en/insights/song/accenture-life-trends-2024",
+        previewUrl: "https://www.accenture.com/content/dam/accenture/final/accenture-com/document-2/Accenture-Life-Trends-2024-Report.pdf",
+    },
+    {
+        id: 2,
+        title: "Accenture Pulse of Change",
+        description: "With the rise of generative AI and other emerging technologies,change is essential for organizations for the future. ",
+        image: "/images/projects/2.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://www.accenture.com/us-en/about/company/pulse-of-change",
+        previewUrl: "https://www.accenture.com/us-en/about/accenture-research-index",
+    },
+    {
+        id: 3,
+        title: "RESEARCH REPORT",
+        description: "The importance of accessing highly skilled talent is amplified as multinational companies navigate intensifying disruptions on a global scale.",
+        image: "/images/projects/3.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://www.accenture.com/us-en/insights/consulting/refocus-talent-lens",
+        previewUrl: "https://www.accenture.com/content/dam/accenture/final/accenture-com/document-2/Accenture-Focus-Your-Talent-Lens-Abundance-Awaits-Final.pdf#zoom=40",
+    },
+    {
+        id: 4,
+        title: "The Cyber-Resilient CEO",
+        description: "How confident CEOs are taking charge of cybersecurity, lack confidence in their organization’s ability to avert or minimize such attacks.",
+        image: "/images/projects/4.png",
+        tag: ["All", "Mobile"],
+        gitUrl: "https://www.accenture.com/us-en/insights/security/cyber-resilient-ceo",
+        previewUrl: "",
+    },
+    {
+        id: 5,
+        title: "Five practices to thrive on the Cloud",
+        description: "By focusing solely on migration services that cloud offers,companies forego the opportunity to maximize the value of their cloud investments.",
+        image: "/images/projects/5.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://www.accenture.com/us-en/insights/consulting/maximizing-cloud",
+        previewUrl: "https://www.accenture.com/content/dam/accenture/final/markets/europe/imagery/Accenture-S-and-C-Maximizing-Your-Cloud-Advantage-Jan22.pdf#zoom=40",
+    },
+    {
+        id: 6,
+        title: "A life-centric approach to growth",
+        description: "Customers lives - and the global forces that shape them - have never been more unpredictable. For companies, that creates a crisis of relevance.",
+        image: "c:\Users\nirak\OneDrive\Desktop\accen_try2\ACC_US\public\images\<projects />6.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://www.accenture.com/us-en/insights/song/life-centric-approach-to-growth",
+        previewUrl: "https://www.accenture.com/content/dam/accenture/final/capabilities/song/communicate/imagery/SongLifeCentric_Infographic_FrontDoor.pdf#zoom=40",
+    },
 ];
 
 const ProjectsSection: React.FC = () => {
