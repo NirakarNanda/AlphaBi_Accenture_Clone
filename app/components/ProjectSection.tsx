@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 
 interface Project {
@@ -64,7 +63,7 @@ const projectsData: Project[] = [
         id: 6,
         title: "A life-centric approach to growth",
         description: "Customers lives - and the global forces that shape them - have never been more unpredictable. For companies, that creates a crisis of relevance.",
-        image: "c:\Users\nirak\OneDrive\Desktop\accen_try2\ACC_US\public\images\<projects />6.png",
+        image: "/images/projects/6.png",
         tag: ["All", "Web"],
         gitUrl: "https://www.accenture.com/us-en/insights/song/life-centric-approach-to-growth",
         previewUrl: "https://www.accenture.com/content/dam/accenture/final/capabilities/song/communicate/imagery/SongLifeCentric_Infographic_FrontDoor.pdf#zoom=40",
