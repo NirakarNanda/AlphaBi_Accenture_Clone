@@ -45,10 +45,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 items-center justify-between mx-auto px-4 py-2">
-        <div className="flex items-center mr-8">
+        <div className="flex items-center mr-44">
           <Link href="/images/ACN2.png" passHref>
             <div>
-              <img src="/images/ACN2.png" className="max-w-full" />
+              <img src="public/images/ACN2.png" className="max-w-full" />
             </div>
           </Link>
           <br></br>
